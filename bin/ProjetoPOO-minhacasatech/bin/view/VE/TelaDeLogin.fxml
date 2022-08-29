@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #403E3E;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="POO\ProjetoPOO-minhacasatech\src\controller">
+   <children>
+      <ImageView fitHeight="316.0" fitWidth="456.0" layoutX="95.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagens/Rectangle%206.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="119.0" fitWidth="252.0" layoutX="174.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagens/pinterest_profile_image-removebg-preview%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="101.0" layoutX="254.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Imagens/LOGIN.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="194.0" layoutY="200.0" text="Login:" />
+      <Label layoutX="194.0" layoutY="232.0" text="Senha:" />
+      <TextField fx:id="login" layoutX="240.0" layoutY="196.0" />
+      <TextField fx:id="senha" layoutX="240.0" layoutY="228.0" />
+      <Button layoutX="263.0" layoutY="270.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="74.0" style="-fx-background-color: #00D03A;" text="Entrar" textFill="WHITE" />
+   </children>
+</Pane>

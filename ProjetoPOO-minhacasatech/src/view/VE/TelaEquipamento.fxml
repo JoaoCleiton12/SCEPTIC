@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0B7ABF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FrontControllerListarEquipamentos">
+   <children>
+      <Pane layoutX="44.0" layoutY="29.0" prefHeight="343.0" prefWidth="512.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Pane prefHeight="81.0" prefWidth="512.0" style="-fx-background-color: #000000;">
+               <children>
+                  <Label layoutX="119.0" layoutY="15.0" text="EQUIPAMENTOS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <TableView fx:id="tblequipamentos" layoutX="9.0" layoutY="129.0" prefHeight="158.0" prefWidth="492.0">
+              <columns>
+                  <TableColumn fx:id="clnid" prefWidth="41.0" text="ID" />
+                <TableColumn fx:id="clnnome" prefWidth="88.0" text="NOME" />
+                <TableColumn fx:id="clnserie" prefWidth="82.0" text="N° DE SÉRIE" />
+                  <TableColumn fx:id="clnresponsavel" prefWidth="95.0" text="RESPONSÁVEL" />
+                  <TableColumn fx:id="clnpeso" prefWidth="54.0" text="PESO" />
+                  <TableColumn fx:id="clnpreco" prefWidth="56.0" text="PREÇO" />
+                  <TableColumn fx:id="clnquantidade" minWidth="0.0" prefWidth="81.0" text="QUANTI" />
+                  <TableColumn fx:id="clnlocal" prefWidth="76.0" text="LOCAL" />
+              </columns>
+            </TableView>
+            <Button fx:id="btncadastrar" layoutX="14.0" layoutY="304.0" mnemonicParsing="false" onAction="#cadastrar" text="Cadastrar" />
+            <Button fx:id="btneditar" layoutX="94.0" layoutY="304.0" mnemonicParsing="false" onAction="#editar" text="Editar" />
+            <Button fx:id="btnexcluir" layoutX="150.0" layoutY="304.0" mnemonicParsing="false" onAction="#excluir" text="Excluir" />
+            <Button fx:id="btninicio" layoutX="408.0" layoutY="304.0" mnemonicParsing="false" onAction="#inicio" text="Inicio" />
+            <Button fx:id="btnsair" layoutX="462.0" layoutY="304.0" mnemonicParsing="false" onAction="#sair" text="Sair" />
+            <RadioButton fx:id="rbnome" layoutX="163.0" layoutY="105.0" mnemonicParsing="false" text="Nome" />
+            <RadioButton fx:id="rbnumerodeserie" layoutX="229.0" layoutY="105.0" mnemonicParsing="false" text="Numero de Série" />
+            <RadioButton fx:id="rbresonsavel" layoutX="350.0" layoutY="105.0" mnemonicParsing="false" text="Responsável" />
+            <RadioButton fx:id="rblocal" layoutX="449.0" layoutY="105.0" mnemonicParsing="false" text="Local" />
+            <TextField fx:id="pesquisar" layoutX="11.0" layoutY="101.0" onAction="#buscar" promptText="Pesquisar..." />
+         </children></Pane>
+   </children>
+</Pane>

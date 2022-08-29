@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0B7ABF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FrontControllerCadastro">
+   <children>
+      <Pane layoutX="44.0" layoutY="29.0" prefHeight="343.0" prefWidth="512.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Pane prefHeight="81.0" prefWidth="512.0" style="-fx-background-color: #000000;">
+               <children>
+                  <Label layoutX="69.0" layoutY="14.0" text="CADASTRO DE CLIENTE" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="14.0" layoutY="110.0" text="Nome:" />
+            <Label layoutX="14.0" layoutY="155.0" text="Endereço:" />
+            <Label layoutX="14.0" layoutY="199.0" prefHeight="17.0" prefWidth="29.0" text="CPF:" />
+            <Label layoutX="14.0" layoutY="244.0" text="Telefone" />
+            <TextField fx:id="nomecadascli" layoutX="106.0" layoutY="106.0" prefHeight="25.0" prefWidth="386.0" />
+            <TextField fx:id="cpfcadascli" layoutX="106.0" layoutY="195.0" prefHeight="25.0" prefWidth="386.0" />
+            <TextArea fx:id="enderecocadascli" layoutX="106.0" layoutY="151.0" prefHeight="17.0" prefWidth="386.0" />
+            <TextArea fx:id="telefonecli" layoutX="106.0" layoutY="240.0" prefHeight="17.0" prefWidth="386.0" />
+            <Button fx:id="enviarcadastrocli" onAction="#casdastrarCliente" layoutX="221.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #00D03A;" text="ENVIAR" />
+         </children></Pane>
+   </children>
+</Pane>

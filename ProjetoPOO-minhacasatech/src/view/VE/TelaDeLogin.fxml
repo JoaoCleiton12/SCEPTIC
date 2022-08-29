@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #403E3E;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FrontController">
+   <children>
+      <Pane layoutX="70.0" layoutY="39.0" prefHeight="322.0" prefWidth="471.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label fx:id="erroAUT" layoutX="173.0" layoutY="215.0" text="Login ou senha incorretos" textFill="#f20404" visible="false" />
+            <Button fx:id="botaologin" layoutX="204.0" layoutY="242.0" mnemonicParsing="false" onAction="#autenticar" prefHeight="34.0" prefWidth="74.0" style="-fx-background-color: #00D03A;" text="Entrar" textFill="WHITE" />
+            <Label layoutX="104.0" layoutY="25.0" prefHeight="75.0" prefWidth="275.0" text="SCEPTIC">
+               <font>
+                  <Font name="Cooper Black" size="52.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="194.0" layoutY="200.0" text="Login:" />
+      <Label layoutX="194.0" layoutY="232.0" text="Senha:" />
+      <TextField fx:id="login" layoutX="240.0" layoutY="196.0" />
+      <TextField fx:id="senha" layoutX="240.0" layoutY="228.0" />
+      <Label layoutX="257.0" layoutY="145.0" text="LOGIN">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

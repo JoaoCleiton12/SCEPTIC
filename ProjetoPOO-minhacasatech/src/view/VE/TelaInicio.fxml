@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FrontController">
+   <children>
+      <Accordion layoutX="77.0" layoutY="14.0" />
+      <Pane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="6.0" layoutY="15.0" text="SCEPTIC">
+               <font>
+                  <Font name="Eras Bold ITC" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="home" layoutX="119.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: #FFFFFF;" text="HOME" textFill="RED">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+            <Button fx:id="sair" layoutX="563.0" layoutY="21.0" mnemonicParsing="false" onAction="#Sair" style="-fx-background-color: #FFFFFF;" text="SAIR" textFill="RED">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+            <Button fx:id="clientes" layoutX="164.0" layoutY="21.0" mnemonicParsing="false" onAction="#ListarClientes" prefHeight="18.0" prefWidth="47.0" style="-fx-background-color: #FFFFFF;" text="CLIENTES">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+            <Button fx:id="equipamentos" layoutX="226.0" layoutY="21.0" mnemonicParsing="false" onAction="#ListarEquipamentos" prefHeight="18.0" prefWidth="74.0" style="-fx-background-color: #FFFFFF;" text="EQUIPAMENTOS">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+            <Button fx:id="notafiscal" layoutX="308.0" layoutY="21.0" mnemonicParsing="false" onAction="#notafiscal" prefHeight="18.0" prefWidth="65.0" style="-fx-background-color: #FFFFFF;" text="COMPRA">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+            <Button fx:id="relatorio" layoutX="381.0" layoutY="21.0" mnemonicParsing="false" onAction="#relatorio" prefHeight="18.0" prefWidth="54.0" style="-fx-background-color: #FFFFFF;" text="RELATÓRIO">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+            <Button fx:id="reponsaveis" layoutX="445.0" layoutY="21.0" mnemonicParsing="false" onAction="#Listarresponsaveis" prefHeight="18.0" prefWidth="65.0" style="-fx-background-color: #FFFFFF;" text="REPONSÁVEIS">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+            <Button fx:id="locais" layoutX="516.0" layoutY="21.0" mnemonicParsing="false" onAction="#locais" prefHeight="18.0" prefWidth="47.0" style="-fx-background-color: #FFFFFF;" text="LOCAIS">
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>

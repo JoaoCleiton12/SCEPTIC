@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0B7ABF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FrontControllerLocal">
+   <children>
+      <Pane layoutX="44.0" layoutY="29.0" prefHeight="343.0" prefWidth="512.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Pane prefHeight="81.0" prefWidth="512.0" style="-fx-background-color: #000000;">
+               <children>
+                  <Label layoutX="89.0" layoutY="14.0" text="ATUALIZAR LOCAIS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="14.0" layoutY="155.0" text="Local:" />
+            <Label layoutX="14.0" layoutY="200.0" prefHeight="17.0" prefWidth="92.0" text="Compartimento:" />
+            <TextArea fx:id="localatualoc" layoutX="106.0" layoutY="147.0" prefHeight="33.0" prefWidth="386.0" />
+            <TextArea fx:id="compartimentoatualoc" layoutX="106.0" layoutY="192.0" prefHeight="33.0" prefWidth="386.0" />
+            <Button fx:id="confiratualoc" layoutX="151.0" layoutY="267.0" mnemonicParsing="false" onAction="#atualizar" prefHeight="33.0" prefWidth="92.0" style="-fx-background-color: #00D03A;" text="CONFIRMAR" />
+            <Button fx:id="sairatualoc1" layoutX="368.0" layoutY="267.0" mnemonicParsing="false" onAction="#sair" prefHeight="33.0" prefWidth="92.0" style="-fx-background-color: #e20000;" text="SAIR" />
+            <ComboBox fx:id="localatua" layoutX="29.0" layoutY="94.0" prefWidth="150.0" promptText="Local" />
+            <Button fx:id="enviaratualoc" layoutX="44.0" layoutY="268.0" mnemonicParsing="false" onAction="#inicio" prefHeight="31.0" prefWidth="84.0" style="-fx-background-color: #e6f000;" text="INICIO" />
+         </children></Pane>
+   </children>
+</Pane>

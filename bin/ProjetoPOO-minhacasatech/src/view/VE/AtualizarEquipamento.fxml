@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0B7ABF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FrontController">
+   <children>
+      <Pane layoutX="44.0" layoutY="29.0" prefHeight="343.0" prefWidth="512.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Pane prefHeight="81.0" prefWidth="512.0" style="-fx-background-color: #000000;">
+               <children>
+                  <Label layoutX="18.0" layoutY="15.0" text="ATUALIZAR EQUIPAMENTOS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="12.0" layoutY="211.0" prefHeight="17.0" prefWidth="92.0" text="Quanti. Estoque:" />
+            <TextArea fx:id="quantestoqueatuaequi" layoutX="104.0" layoutY="203.0" prefHeight="33.0" prefWidth="221.0" />
+            <Button fx:id="enviarcadastroequi" layoutX="373.0" layoutY="187.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="92.0" style="-fx-background-color: #00D03A;" text="CONFIRMAR" />
+            <Label layoutX="14.0" layoutY="119.0" text="Nome:" />
+            <TextField fx:id="nomeatuaequi" layoutX="102.0" layoutY="111.0" prefHeight="33.0" prefWidth="221.0" />
+            <TextField fx:id="precoatuaequi" layoutX="102.0" layoutY="162.0" prefHeight="33.0" prefWidth="221.0" />
+            <Label layoutX="14.0" layoutY="170.0" text="Preço:" />
+            <TextArea fx:id="identiresponatuaequi" layoutX="102.0" layoutY="246.0" prefHeight="33.0" prefWidth="221.0" />
+            <Label layoutX="14.0" layoutY="254.0" prefHeight="17.0" prefWidth="92.0" text="Identi. Respon:" />
+            <TextField fx:id="localatuaequi" layoutX="102.0" layoutY="290.0" prefHeight="33.0" prefWidth="221.0" />
+            <Label layoutX="14.0" layoutY="298.0" text="Local:" />
+         </children></Pane>
+   </children>
+</Pane>

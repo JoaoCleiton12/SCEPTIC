@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0B7ABF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FrontControllerListarLocal">
+   <children>
+      <Pane layoutX="44.0" layoutY="29.0" prefHeight="343.0" prefWidth="512.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Pane prefHeight="81.0" prefWidth="512.0" style="-fx-background-color: #000000;">
+               <children>
+                  <Label layoutX="195.0" layoutY="15.0" text="LOCAIS" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <TableView fx:id="tblocais" layoutX="9.0" layoutY="97.0" prefHeight="232.0" prefWidth="446.0">
+              <columns>
+                <TableColumn fx:id="clnomeloc" prefWidth="197.0" text="NOME" />
+                  <TableColumn fx:id="clncompartimentoloc" prefWidth="248.0" text="COMPARTIMENTO" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="38.0" fitWidth="31.0" layoutX="467.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/Cadastrar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="467.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/cancelar.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="467.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagens/editar.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </children>
+</Pane>
